@@ -1,0 +1,23 @@
+[
+  {
+    "name": "URP Sample",
+    "path": "Packages/Infinite Dawn/URP Sample.unitypackage"
+  },
+  {
+    "name": "HDRP Sample",
+    "path": "Packages/Infinite Dawn/HDRP Sample.unitypackage"
+  },
+  {
+    "name": "Mobile Sample",
+    "path": "Packages/Infinite Dawn/Mobile Sample.unitypackage",
+    "dependencies": [
+      "https://assetstore.unity.com/packages/templates/systems/low-poly-shooter-pack-free-sample-144839"    ]
+  },
+  {
+    "name": "Emerald AI 3.0 Support",
+    "path": "Packages/Black Horizon Studios/Emerald AI.unitypackage",
+    "dependencies": [
+      "https://assetstore.unity.com/packages/tools/ai/emerald-ai-3-0-203904"
+    ]
+  }
+]
