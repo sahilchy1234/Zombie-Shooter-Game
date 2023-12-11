@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!162 &1
+EditorUserSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 4
+  m_ConfigSettings:
+    RecentlyUsedSceneGuid-0:
+      value: 530505055c0d5d020e5f587047720f4417154f722f7124642f2b4c64b2b5643a
+      flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 5153000706015e0a0b5c59211522094445151b2e7c2c20697c78456be6b63739
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 0500030254540f5d555b082415215e4444154a292a292431782f4d6ab6b1366c
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 52500c5f030c0b0a5b58082014770c4413151a7b292c27317d711f36b0b63161
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 06035553500d500858595d26477708444e154e297e7b23602e784c31b6e56c3a
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 51530c045c0c0c03095e5c2411750a44414f1d7a7e2d7466797f4b64e7e4636e
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 00060652060c5e0f0f5e5b7641775c441215197c292a27337f711837e7e2653e
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 5709005251010f085f0a5d2312760844464e4c727c2a7268782d4c60e3b9653a
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 55570c0051060f5e5e570f744977064414151a2f7e7d743179781867b0e3313c
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 0606070255015e0f5f0f5e7344210944414f4b722a707463782c4536b0e6323b
+      flags: 0
+    UnityRemoteDevice:
+      value: 530104565d04580b405e5c733172064642444e730d7a766108
+      flags: 0
+    UnityRemoteJoystickSource:
+      value: 315459091150
+      flags: 0
+    vcSharedLogLevel:
+      value: 0d5e400f0650
+      flags: 0
+  m_VCAutomaticAdd: 1
+  m_VCDebugCom: 0
+  m_VCDebugCmd: 0
+  m_VCDebugOut: 0
+  m_SemanticMergeMode: 2
+  m_DesiredImportWorkerCount: 1
+  m_StandbyImportWorkerCount: 1
+  m_IdleImportWorkerShutdownDelay: 60000
+  m_VCShowFailedCheckout: 1
+  m_VCOverwriteFailedCheckoutAssets: 1
+  m_VCProjectOverlayIcons: 1
+  m_VCHierarchyOverlayIcons: 1
+  m_VCOtherOverlayIcons: 1
+  m_VCAllowAsyncUpdate: 1
+  m_ArtifactGarbageCollection: 1
