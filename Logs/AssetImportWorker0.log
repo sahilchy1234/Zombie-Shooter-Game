@@ -15,7 +15,7 @@ D:/unity projects/Zombie Shooter Project Client 14/Zombie-Shooter-Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55836
+57026
 Successfully changed project path to: D:/unity projects/Zombie Shooter Project Client 14/Zombie-Shooter-Game
 D:/unity projects/Zombie Shooter Project Client 14/Zombie-Shooter-Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/unity projects/Zombie Shooter Project Client 14/Zombie-Shooter-Game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [14108] Host "[IP] 192.168.29.9 [Port] 0 [Flags] 2 [Guid] 3225499653 [EditorId] 3225499653 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-B8KA293K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [5468] Host "[IP] 192.168.29.9 [Port] 0 [Flags] 2 [Guid] 3324292627 [EditorId] 3324292627 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-B8KA293K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [14108] Host "[IP] 192.168.29.9 [Port] 0 [Flags] 2 [Guid] 3225499653 [EditorId] 3225499653 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-B8KA293K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [5468] Host "[IP] 192.168.29.9 [Port] 0 [Flags] 2 [Guid] 3324292627 [EditorId] 3324292627 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-B8KA293K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 36.72 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 46.72 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path D:/unity/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,52 +69,52 @@ Initialize mono
 Mono path[0] = 'D:/unity/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'D:/unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity/2022.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/unity/2022.3.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: D:/unity/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011421 seconds.
-- Loaded All Assemblies, in  2.002 seconds
+Registered in 0.009391 seconds.
+- Loaded All Assemblies, in  0.493 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 634 ms
+Android Extension - Scanning For ADB Devices 278 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.415 seconds
-Domain Reload Profiling: 3417ms
-	BeginReloadAssembly (1236ms)
+- Finished resetting the current domain, in  0.715 seconds
+Domain Reload Profiling: 1208ms
+	BeginReloadAssembly (185ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (4ms)
-	RebuildCommonClasses (175ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (118ms)
-	LoadAllAssembliesAndSetupDomain (441ms)
-		LoadAssemblies (1229ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (76ms)
+	LoadAllAssembliesAndSetupDomain (179ms)
+		LoadAssemblies (182ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (436ms)
-			TypeCache.Refresh (432ms)
-				TypeCache.ScanAssembly (394ms)
+		AnalyzeDomain (175ms)
+			TypeCache.Refresh (173ms)
+				TypeCache.ScanAssembly (154ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1416ms)
+	FinalizeReload (715ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1236ms)
+		SetupLoadedEditorAssemblies (650ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1007ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (430ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (14ms)
-			ProcessInitializeOnLoadAttributes (141ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (146ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -124,8 +124,8 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\unity projects\Zombie Shooter Project Client 14\Zombie-Shooter-Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\unity projects\Zombie Shooter Project Client 14\Zombie-Shooter-Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.220 seconds
-Refreshing native plugins compatible for Editor in 8.73 ms, found 6 plugins.
+- Loaded All Assemblies, in  1.269 seconds
+Refreshing native plugins compatible for Editor in 10.37 ms, found 6 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
@@ -134,116 +134,68 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.760 seconds
-Domain Reload Profiling: 2978ms
-	BeginReloadAssembly (212ms)
+- Finished resetting the current domain, in  2.574 seconds
+Domain Reload Profiling: 3837ms
+	BeginReloadAssembly (238ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (63ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (883ms)
-		LoadAssemblies (566ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (891ms)
+		LoadAssemblies (625ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (445ms)
-			TypeCache.Refresh (385ms)
-				TypeCache.ScanAssembly (351ms)
-			ScanForSourceGeneratedMonoScriptInfo (40ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (1761ms)
+		AnalyzeDomain (422ms)
+			TypeCache.Refresh (276ms)
+				TypeCache.ScanAssembly (248ms)
+			ScanForSourceGeneratedMonoScriptInfo (66ms)
+			ResolveRequiredComponents (78ms)
+	FinalizeReload (2575ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1360ms)
+		SetupLoadedEditorAssemblies (2236ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (98ms)
+			InitializePlatformSupportModulesInManaged (37ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (129ms)
-			ProcessInitializeOnLoadAttributes (1031ms)
-			ProcessInitializeOnLoadMethodAttributes (95ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (1908ms)
+			ProcessInitializeOnLoadMethodAttributes (199ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 6.26 ms, found 6 plugins.
+		AwakeInstancesAfterBackupRestoration (17ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 9.08 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6430 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 105 unused Assets / (2.6 MB). Loaded Objects now: 6892.
-Memory consumption went from 338.7 MB to 336.1 MB.
-Total: 7.152800 ms (FindLiveObjects: 0.707500 ms CreateObjectMapping: 0.692700 ms MarkObjects: 4.878900 ms  DeleteObjects: 0.871500 ms)
+Unloading 6433 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 105 unused Assets / (2.6 MB). Loaded Objects now: 6895.
+Memory consumption went from 340.0 MB to 337.3 MB.
+Total: 10.687200 ms (FindLiveObjects: 0.933200 ms CreateObjectMapping: 0.866900 ms MarkObjects: 7.289100 ms  DeleteObjects: 1.596300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\unity projects\Zombie Shooter Project Client 14\Zombie-Shooter-Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\unity projects\Zombie Shooter Project Client 14\Zombie-Shooter-Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.620 seconds
-Refreshing native plugins compatible for Editor in 6.33 ms, found 6 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.593 seconds
-Domain Reload Profiling: 4214ms
-	BeginReloadAssembly (230ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (284ms)
-		LoadAssemblies (371ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (32ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (3595ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1313ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (90ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (98ms)
-			ProcessInitializeOnLoadAttributes (971ms)
-			ProcessInitializeOnLoadMethodAttributes (147ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 6.67 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 10.27 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6265 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 73 unused Assets / (2.6 MB). Loaded Objects now: 6895.
-Memory consumption went from 298.4 MB to 295.8 MB.
-Total: 6.436200 ms (FindLiveObjects: 0.780000 ms CreateObjectMapping: 0.412300 ms MarkObjects: 4.123600 ms  DeleteObjects: 1.118100 ms)
+Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (2.5 MB). Loaded Objects now: 6895.
+Memory consumption went from 202.8 MB to 200.3 MB.
+Total: 11.332600 ms (FindLiveObjects: 0.872300 ms CreateObjectMapping: 0.978700 ms MarkObjects: 7.904500 ms  DeleteObjects: 1.574100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -262,73 +214,584 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 80230.098354 seconds.
-  path: Assets/Dark UI/Materials/Blur Background.mat
-  artifactKey: Guid(e0759ad1b55e3db4fa9772d244943307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dark UI/Materials/Blur Background.mat using Guid(e0759ad1b55e3db4fa9772d244943307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69552c57cd039cccce8bf540a311e638') in 0.283335 seconds
+  Time since last request: 82097.904925 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials
+  artifactKey: Guid(15da29fe25042944d9ae6afdee0aea96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials using Guid(15da29fe25042944d9ae6afdee0aea96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6abdde6558e8e7e979e1008f47abeecd') in 0.011157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.251549 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Black Metal_snaps002.mat
+  artifactKey: Guid(528bab4d959abd8438a427ca2334205f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Black Metal_snaps002.mat using Guid(528bab4d959abd8438a427ca2334205f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd9b764a9ecb6403ca8d3aa53538598') in 0.174053 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Dark UI/Materials/UI Particle Additive.mat
-  artifactKey: Guid(9598c9685d9b33942b05fc1e1f181219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dark UI/Materials/UI Particle Additive.mat using Guid(9598c9685d9b33942b05fc1e1f181219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b8207183579254e5e41a131a683908') in 0.043216 seconds
+  Time since last request: 0.000028 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/DeepBlue_snaps002.mat
+  artifactKey: Guid(0311cbb0184a51845912c30ec478cb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/DeepBlue_snaps002.mat using Guid(0311cbb0184a51845912c30ec478cb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '857ee23630244ad69446504fa6246e5a') in 0.019647 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Dark UI/Materials/Dissolve Effect.mat
-  artifactKey: Guid(ac43d5a97055b984a9941efa79bc03b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dark UI/Materials/Dissolve Effect.mat using Guid(ac43d5a97055b984a9941efa79bc03b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294587de4fa632f6c7811bec469a7878') in 0.023742 seconds
+  Time since last request: 0.000035 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Khaki Darker.mat
+  artifactKey: Guid(ca63e1d0575d9eb4ab8e24dac32b51d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Khaki Darker.mat using Guid(ca63e1d0575d9eb4ab8e24dac32b51d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7243761fd151df76b8a0c86ed9af8ce8') in 0.020157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/DarkCyan_snaps002.mat
+  artifactKey: Guid(9b6f00edc7822ab47b645603f7b615b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/DarkCyan_snaps002.mat using Guid(9b6f00edc7822ab47b645603f7b615b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e77d20a533ae2ca89f4812e0204148b4') in 0.017265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Orange_snaps002.mat
+  artifactKey: Guid(1d2cbf17d90a3884f8f0c10cd230f809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Orange_snaps002.mat using Guid(1d2cbf17d90a3884f8f0c10cd230f809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31a09e38f17d5387f8359e6abd13ebdb') in 0.034657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/White_snaps002.mat
+  artifactKey: Guid(4a11ac89ec3635a4b896556552983d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/White_snaps002.mat using Guid(4a11ac89ec3635a4b896556552983d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7dd884831001cc07ac9e2a71f6e774b') in 0.045582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Blue_snaps002.mat
+  artifactKey: Guid(04076a8ba5c805c409251912da22b641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Blue_snaps002.mat using Guid(04076a8ba5c805c409251912da22b641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f848815ea135057fd468a9728f857164') in 0.027584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Blue Light_snaps002.mat
+  artifactKey: Guid(c91ea5393f73a814888ae7c250232e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Blue Light_snaps002.mat using Guid(c91ea5393f73a814888ae7c250232e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2362297a9542561d82ae07250de09a0') in 0.034049 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Green Dark_snaps002.mat
+  artifactKey: Guid(51e077d1f836fd5459499a9de2bf4c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Green Dark_snaps002.mat using Guid(51e077d1f836fd5459499a9de2bf4c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a21fe74dea475c8e59f751bdfdff8b8') in 0.027070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Gray_snaps002.mat
+  artifactKey: Guid(8621dfcb3dbf229428e45425021e0875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Gray_snaps002.mat using Guid(8621dfcb3dbf229428e45425021e0875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc94bc916f89e14ed39d4ea14845aab2') in 0.029729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Black Plastic_snaps002.mat
+  artifactKey: Guid(7332bdaf1f2a0394ea703cbaf96db22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Black Plastic_snaps002.mat using Guid(7332bdaf1f2a0394ea703cbaf96db22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c729794b66c0d0c37855a65b71bb14c') in 0.037030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Khaki Damp.mat
+  artifactKey: Guid(4afc0ffccab963644a4b0b22117f129e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Khaki Damp.mat using Guid(4afc0ffccab963644a4b0b22117f129e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af84af46740b023bbd8c01f42cb89df1') in 0.039962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Khaki Dark.mat
+  artifactKey: Guid(651d0db5a5db31a4e8ea67cb0bb4bdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Khaki Dark.mat using Guid(651d0db5a5db31a4e8ea67cb0bb4bdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf899d574a9dbf85957b20b5d1e1b47f') in 0.026517 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/DarkerGray_snaps002.mat
+  artifactKey: Guid(3d2110dabe6f73043ba4404830e26f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/DarkerGray_snaps002.mat using Guid(3d2110dabe6f73043ba4404830e26f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34f38ce50fb0c5fc0b11ececf4c7bc3') in 0.027624 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/Dark UI/Materials/Blur Main.mat
-  artifactKey: Guid(13be6613275420f4bb1b204905774d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dark UI/Materials/Blur Main.mat using Guid(13be6613275420f4bb1b204905774d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af060377cf04f031276e02690bc56c9a') in 0.017768 seconds
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Green_snaps002.mat
+  artifactKey: Guid(86c38cc17be868947801ac9b80453963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Green_snaps002.mat using Guid(86c38cc17be868947801ac9b80453963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a2710e8c7cd34eb81e0fe92107a065') in 0.031238 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Dark UI/Materials/UI Dissolve.mat
-  artifactKey: Guid(2ac9a8033337c4b908c54c087abd31e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dark UI/Materials/UI Dissolve.mat using Guid(2ac9a8033337c4b908c54c087abd31e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52f6caeba23450c5234ab9402a779946') in 0.038333 seconds
+  Time since last request: 0.000018 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/DarkBlue_snaps002.mat
+  artifactKey: Guid(c2cf96f9bc9ef0143bfb62bd0e47e566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/DarkBlue_snaps002.mat using Guid(c2cf96f9bc9ef0143bfb62bd0e47e566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eabce97034daa7efb9490ddefc1e66c9') in 0.026923 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Dark UI/Materials/Blur Modal.mat
-  artifactKey: Guid(61f5dccc93c7f5e4a87d0059b1c0ccf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dark UI/Materials/Blur Modal.mat using Guid(61f5dccc93c7f5e4a87d0059b1c0ccf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91bc1966de91c18c290d24270a69fc82') in 0.018633 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Blue_snaps002.mat
+  artifactKey: Guid(abbba6a8ef5ae9f4b864662d522758b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Blue_snaps002.mat using Guid(abbba6a8ef5ae9f4b864662d522758b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef3a4ec14a2c1768488980081f9db972') in 0.029846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/DarkGray_snaps002.mat
+  artifactKey: Guid(15cb6b096bb78c7479c93c6e26153387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/DarkGray_snaps002.mat using Guid(15cb6b096bb78c7479c93c6e26153387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27b8ff14ffadc33fcccdf7b606666a12') in 0.038997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000759 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/BlueWindow_snaps002.mat
+  artifactKey: Guid(50e8d87218c9f9649975e35ca3232d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/BlueWindow_snaps002.mat using Guid(50e8d87218c9f9649975e35ca3232d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f233b99eeefec65ae151b42fe9af136') in 0.031132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Green_snaps002.mat
+  artifactKey: Guid(cff86b3f8014a6e4babecc006d77e004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Green_snaps002.mat using Guid(cff86b3f8014a6e4babecc006d77e004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53335ded959cf5cd309356a01435420e') in 0.042313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Black_snaps002.mat
+  artifactKey: Guid(8440f7c46cde87942a79d9125f40ae89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Black_snaps002.mat using Guid(8440f7c46cde87942a79d9125f40ae89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4239f009d8f396c581aa87e797330946') in 0.032228 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/LightBlue_snaps002.mat
+  artifactKey: Guid(4b600b0043b600a42a640a24ab4dea01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/LightBlue_snaps002.mat using Guid(4b600b0043b600a42a640a24ab4dea01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1f02d97fbab74d5f744af27e6a197c') in 0.033064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Orange Dark_snaps002.mat
+  artifactKey: Guid(79bf7ae28ff43cc4ca939f5652f4d38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Orange Dark_snaps002.mat using Guid(79bf7ae28ff43cc4ca939f5652f4d38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a08bdcc22c787ad042c8dd55b09e8c9') in 0.032106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Blue Dark_snaps002.mat
+  artifactKey: Guid(779370d176aafca40a59fafa5ba422d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Blue Dark_snaps002.mat using Guid(779370d176aafca40a59fafa5ba422d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89dd5ca4db2a206bf9d5360dd78bd102') in 0.035611 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Khaki_snaps002.mat
+  artifactKey: Guid(4f6a32ae4320c1d489759d620e71be9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Khaki_snaps002.mat using Guid(4f6a32ae4320c1d489759d620e71be9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c738d9aa4c557ba3a5dff9f00a738ff1') in 0.035036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/GreenBlack_snaps002.mat
+  artifactKey: Guid(38f55b85103d762478d8298d58d90704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/GreenBlack_snaps002.mat using Guid(38f55b85103d762478d8298d58d90704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1863b2fc918517781228c0dc7e85ea8') in 0.034905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Orange Light_snaps002.mat
+  artifactKey: Guid(dfe499413b9e65e409dcfaa1013609fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Orange Light_snaps002.mat using Guid(dfe499413b9e65e409dcfaa1013609fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0be2c743aa54141d3ee6372371a2ea') in 0.033762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/LightGray_snaps002.mat
+  artifactKey: Guid(ae2efeea9c901af48b6bb19d9981d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/LightGray_snaps002.mat using Guid(ae2efeea9c901af48b6bb19d9981d5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b793ed8595002dce90ffeb4ede20a6a') in 0.033988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Gold_snaps002.mat
+  artifactKey: Guid(f6acf520cc3bc374dbffd256f175bd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Gold_snaps002.mat using Guid(f6acf520cc3bc374dbffd256f175bd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '108b413db28367ae2c9c3369be962fa9') in 0.038591 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Yellow_snaps002.mat
+  artifactKey: Guid(2e89229997eb0fd4fb0ceb1c61a61593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Yellow_snaps002.mat using Guid(2e89229997eb0fd4fb0ceb1c61a61593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b22ee7203caa42d07ace421fbf29c0b') in 0.034052 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/Dark UI/Materials/Blur Grunge Masked.mat
-  artifactKey: Guid(0162147a19680e749b25d368f9bd7c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dark UI/Materials/Blur Grunge Masked.mat using Guid(0162147a19680e749b25d368f9bd7c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce835e7ce0a267a7831098672f5ce973') in 0.028584 seconds
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Green Light_snaps002.mat
+  artifactKey: Guid(3f95858cfa41c214495626e4e810179e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/Machine Green Light_snaps002.mat using Guid(3f95858cfa41c214495626e4e810179e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd05a94301dae862bf1f4e8990da52123') in 0.029664 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 99.918947 seconds.
-  path: Assets/Dark UI/Textures/Others/UI Dissolve Noise.png
-  artifactKey: Guid(42fa8c34958b97442a6de1f23f479c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dark UI/Textures/Others/UI Dissolve Noise.png using Guid(42fa8c34958b97442a6de1f23f479c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5d7a97ab167f179bcb576db777e56f') in 0.067222 seconds
+  Time since last request: 0.000023 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/GreenDark_snaps002.mat
+  artifactKey: Guid(6f5b522968a198d40a19799562c3eae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/GreenDark_snaps002.mat using Guid(6f5b522968a198d40a19799562c3eae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4186af7e58af177ef37ed496ce840dcd') in 0.035210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/MachineOrange_snaps002.mat
+  artifactKey: Guid(80507923a3333a6498095c8c364d7983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Mobile Template/Scenes/Showcase Resources/Materials/MachineOrange_snaps002.mat using Guid(80507923a3333a6498095c8c364d7983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff6eccf685436d09aa0a5bdad2561e2') in 0.034616 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 14.295186 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scriptable/Post Processing/UI Camera Profile.asset
+  artifactKey: Guid(4da2b329255fd844ea14f4abf4e62049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scriptable/Post Processing/UI Camera Profile.asset using Guid(4da2b329255fd844ea14f4abf4e62049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0614097f64749e49b939aefbd755e4') in 0.026944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scriptable/Post Processing/Weapon Camera Profile.asset
+  artifactKey: Guid(fb1fc880b688aa54891fd432421fc286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scriptable/Post Processing/Weapon Camera Profile.asset using Guid(fb1fc880b688aa54891fd432421fc286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae2f31414ad32055aa3140445cb41a6') in 0.005651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 6.107710 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Resources/Setup/MainMenu/_SCENELOADER.prefab
+  artifactKey: Guid(b1aa73eb19c9acd41a7a3265a54a67f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Resources/Setup/MainMenu/_SCENELOADER.prefab using Guid(b1aa73eb19c9acd41a7a3265a54a67f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8805c994acdebc757cc6c0f9a4f2b65') in 0.032411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 53
+========================================================================
+Received Import Request.
+  Time since last request: 0.036409 seconds.
+  path: Assets/Settings/SampleSceneProfile.asset
+  artifactKey: Guid(a6560a915ef98420e9faacc1c7438823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/SampleSceneProfile.asset using Guid(a6560a915ef98420e9faacc1c7438823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd6b46df1e669a415efa317da2b0a0f9') in 0.006069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.015722 seconds.
+  path: Assets/TouchControlsKit/zExamples/FirstPerson/Prefabs/scene.prefab
+  artifactKey: Guid(25c9b849241678847a300f71dfbf64dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TouchControlsKit/zExamples/FirstPerson/Prefabs/scene.prefab using Guid(25c9b849241678847a300f71dfbf64dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e4b1405fba34f77c3cc1b91030a04b') in 0.343382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 510
+========================================================================
+Received Import Request.
+  Time since last request: 0.397361 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Animations/Animators/Cutscenes/ShowcaseCutscene.playable
+  artifactKey: Guid(3350b64662032c34480ed6853a0c4c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Animations/Animators/Cutscenes/ShowcaseCutscene.playable using Guid(3350b64662032c34480ed6853a0c4c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd917f29704fdb141e3e6a0432954521') in 0.030120 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.757541 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Example Scenes/Basic/EmptyScenePlayer
+  artifactKey: Guid(4d6c5df73f562e944a083f760e05a318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Example Scenes/Basic/EmptyScenePlayer using Guid(4d6c5df73f562e944a083f760e05a318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19568883d1d9c4774925aba8c8204a0b') in 0.002295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.714017 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes
+  artifactKey: Guid(16561ce3b6fc8104884d07b2e818acfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes using Guid(16561ce3b6fc8104884d07b2e818acfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ef0dcc2a3cfb0cc5c9ff454159a051') in 0.001693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.479994 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Example Scenes/ScenePresistency/SavingScene02
+  artifactKey: Guid(7c90c07609c217b40876161f1ad54e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Example Scenes/ScenePresistency/SavingScene02 using Guid(7c90c07609c217b40876161f1ad54e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fea566cf1ba8d6babe3b5de080f92480') in 0.007199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 29.606043 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/AI Demo/AI Showcase/NavMesh.asset
+  artifactKey: Guid(d52d8d41281bdc9439f2d7cd2799bbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/AI Demo/AI Showcase/NavMesh.asset using Guid(d52d8d41281bdc9439f2d7cd2799bbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f86b7f171f1335ec218d22c46078eb') in 0.752418 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 1.489486 seconds.
-  path: Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Textures/VignetteMask.png
-  artifactKey: Guid(95ef4804fe0be4c999ddaa383536cde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Textures/VignetteMask.png using Guid(95ef4804fe0be4c999ddaa383536cde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5371a9d5cdce4f09a59361fade47fe23') in 0.036395 seconds
+  Time since last request: 4.115461 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Loading Demo/Loading Scene.unity
+  artifactKey: Guid(54613bea35c9ed344ae2e879a6fe2e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Loading Demo/Loading Scene.unity using Guid(54613bea35c9ed344ae2e879a6fe2e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d5c44d101f491e4859ea5f94f2e898') in 0.001449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.483882 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase
+  artifactKey: Guid(6b1394810b9338a44b3c833d02c4eb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase using Guid(6b1394810b9338a44b3c833d02c4eb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae69538c8725e703e10ea60576699eb') in 0.001057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.092442 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/LightingData.asset
+  artifactKey: Guid(86591eb7a4f7fce4e8161c47d5a4530a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/LightingData.asset using Guid(86591eb7a4f7fce4e8161c47d5a4530a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Lighting data asset ‘LightingData’ is incompatible with the current Unity version because the scene it was baked for was not serialized. Please use Generate Lighting to rebuild the lighting data, or assign the target scene to the Lighting Data Asset in the inspector.
+ -> (artifact id: 'd9b6875800bc37803988ec932cc35df2') in 0.007938 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-0.exr
+  artifactKey: Guid(43c822a9b70d11f4e9afb305f990470a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-0.exr using Guid(43c822a9b70d11f4e9afb305f990470a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be73d6949766ff6d9872f4bd1cd4c3f4') in 0.121449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-10.exr
+  artifactKey: Guid(af5db9f1589912843907daffaf0ecd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-10.exr using Guid(af5db9f1589912843907daffaf0ecd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '107030a8d4286094e1c49d38fca1d47f') in 0.066311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-11.exr
+  artifactKey: Guid(bc88a5f13485e3240b1c985e4f2e1bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-11.exr using Guid(bc88a5f13485e3240b1c985e4f2e1bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1b22b92f49d36ca2754db50db7d7905') in 0.072919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-7.exr
+  artifactKey: Guid(b92ab119415cd6d4d82a01a1b243b29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-7.exr using Guid(b92ab119415cd6d4d82a01a1b243b29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acdf79cf0c7013261e86005536be16c5') in 0.066357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-13.exr
+  artifactKey: Guid(88c3e3b9851a8d74bb2ca3774caff914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-13.exr using Guid(88c3e3b9851a8d74bb2ca3774caff914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f0874f9685619ed128047021a2ba6a') in 0.043414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-4.exr
+  artifactKey: Guid(8ce7a9f6004d8c84c83998a5ab2fbbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-4.exr using Guid(8ce7a9f6004d8c84c83998a5ab2fbbdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03c1d78689c4d7c5c2cb82d5c8a92a64') in 0.090561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-12.exr
+  artifactKey: Guid(f771dcb0485ed144085e1c7d60a1d7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-12.exr using Guid(f771dcb0485ed144085e1c7d60a1d7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d6de5081eb22d755873b6aa36f64f0') in 0.062886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-3.exr
+  artifactKey: Guid(25c163bb248b12a4c860133ececf1185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-3.exr using Guid(25c163bb248b12a4c860133ececf1185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6208f7fe6fdfbc47dacf1d3a28ead1') in 0.099812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-5.exr
+  artifactKey: Guid(8ec47caf4fda07b4c8c6690a143e3d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-5.exr using Guid(8ec47caf4fda07b4c8c6690a143e3d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0c312c538a4b3342a2c14277a087b5') in 0.122267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-1.exr
+  artifactKey: Guid(3ab4f03ac61f6884fa54c57f24eb5f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-1.exr using Guid(3ab4f03ac61f6884fa54c57f24eb5f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d886acc0ddb113e9e72680502354f39') in 0.048971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-8.exr
+  artifactKey: Guid(83f7092ea5df487439691ba473479d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-8.exr using Guid(83f7092ea5df487439691ba473479d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '607c7c9ac5b3f1583bea9f2872649f50') in 0.048184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-6.exr
+  artifactKey: Guid(10f89e4aed5fe3c4c8c863dce328e309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-6.exr using Guid(10f89e4aed5fe3c4c8c863dce328e309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a01ea5287bf860c5b9210434011c8b') in 0.043118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-9.exr
+  artifactKey: Guid(115fce4bf5ec5034ab77818f878563de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-9.exr using Guid(115fce4bf5ec5034ab77818f878563de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bffad50d5aa049eff69ac5f93c07c80e') in 0.079172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-2.exr
+  artifactKey: Guid(b96b7f4ca092e274f9af145c42707d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Player Showcase/ReflectionProbe-2.exr using Guid(b96b7f4ca092e274f9af145c42707d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '669fb89355c44ef19a5b665a00ea17b5') in 0.043930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.577687 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Environment/Skyboxes/EveningReflection.hdr
+  artifactKey: Guid(a7bed68887a07e34394d4191b3081359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Environment/Skyboxes/EveningReflection.hdr using Guid(a7bed68887a07e34394d4191b3081359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b6769358098782b22e43e029452371') in 0.205281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Environment/Skyboxes/StudioSkyboxProcedural.mat
+  artifactKey: Guid(44fa09b55089e0e4583aa20e742c8514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Environment/Skyboxes/StudioSkyboxProcedural.mat using Guid(44fa09b55089e0e4583aa20e742c8514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500dfafaddede403fc59cb6dae422f53') in 0.035658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Environment/Skyboxes/EveningSkyboxHDR.hdr
+  artifactKey: Guid(9963f75b14527844e8e09e5e321fb053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Aurora FPS Engine/Base Content/Scenes/Player Demo/Environment/Skyboxes/EveningSkyboxHDR.hdr using Guid(9963f75b14527844e8e09e5e321fb053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aeb00f0fde7287b2bbc669f548f1a23') in 7.495748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 25.551205 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase
+  artifactKey: Guid(49503388d1cf7304bb82b36b3d712931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase using Guid(49503388d1cf7304bb82b36b3d712931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cd802c5c12c67dcbb5d5fc45cab1c6a') in 0.094091 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-0_comp_dir.png
+  artifactKey: Guid(b5f51bb86d797a14b9d3965f6d410234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-0_comp_dir.png using Guid(b5f51bb86d797a14b9d3965f6d410234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '864e61f5a8029c44a330219b83bbdc53') in 0.085687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000494 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-4_comp_dir.png
+  artifactKey: Guid(3581e93b1eb54cb4fbfc4cf4c00d50a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-4_comp_dir.png using Guid(3581e93b1eb54cb4fbfc4cf4c00d50a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba32af117b952426e23f63e619351d1') in 0.062416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/ReflectionProbe-0.exr
+  artifactKey: Guid(a62ff5efd1da7144685aeede10bf2f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/ReflectionProbe-0.exr using Guid(a62ff5efd1da7144685aeede10bf2f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f992cc88f6d44d9e7940d0f65a2a3ca') in 0.046976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-2_comp_dir.png
+  artifactKey: Guid(abdf8ecb08cd2f74c887e471fd2adb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-2_comp_dir.png using Guid(abdf8ecb08cd2f74c887e471fd2adb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141458286a7c8c622fed981a1e570484') in 0.051044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000452 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-2_comp_light.exr
+  artifactKey: Guid(dff7f6b185a08aa4ca23b0113cf4bdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-2_comp_light.exr using Guid(dff7f6b185a08aa4ca23b0113cf4bdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c680df63578612aeca7ce619b9865731') in 0.070468 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-3_comp_dir.png
+  artifactKey: Guid(aa50d64c372c1de47a2dd4f74f215a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-3_comp_dir.png using Guid(aa50d64c372c1de47a2dd4f74f215a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab0ee8a1ccae46c562e270d443ed799') in 0.056013 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-4_comp_light.exr
+  artifactKey: Guid(88e6fe287a3f7dd49981915f790d900c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/Lightmap-4_comp_light.exr using Guid(88e6fe287a3f7dd49981915f790d900c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ec52e8e5d874f931abf84279d4ddf00') in 0.048045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/OcclusionCullingData.asset
+  artifactKey: Guid(cd74316d5489c9945889247981ecbfa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Horror FPS KIT/HFPS Assets/Content/Scenes/Main Scenes/Showcase/OcclusionCullingData.asset using Guid(cd74316d5489c9945889247981ecbfa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) 

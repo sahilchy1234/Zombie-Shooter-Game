@@ -11,6 +11,8 @@ using AuroraFPSRuntime.SystemModules.ControllerSystems;
 using AuroraFPSRuntime;
 public class ZombieAI : MonoBehaviour
 {
+    public bool isRunning;
+
     public DamageInfo dmgInfo;
     public int AttackDamage;
     public FPHealth fpHealth;
@@ -48,11 +50,23 @@ public class ZombieAI : MonoBehaviour
                 float velocity = navMeshAgent.velocity.magnitude;
                 if (velocity > 0.2)
                 {
-                  animator.SetBool("IsWalking", true);
+                    if (isRunning == false)
+                    {
+                        animator.SetBool("IsWalking", true);
+                       
+                    }
+                    else
+                    {
+                          animator.SetBool("IsWalking", false);
+                        animator.SetBool("Running", true);
+                         navMeshAgent.speed = 3f;
+                    }
+
                 }
                 else
                 {
-                  animator.SetBool("IsWalking", false);
+                    animator.SetBool("IsWalking", false);
+                    animator.SetBool("Running", false);
                 }
 
                 if (Vector3.Distance(transform.position, player.position) < detectionRadius)
@@ -82,7 +96,8 @@ public class ZombieAI : MonoBehaviour
         if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance < 2.2f)
         {
             SetRandomDestination();
-           
+            isRunning = false;
+
         }
     }
 
@@ -117,7 +132,7 @@ public class ZombieAI : MonoBehaviour
         {
             // Set destination to player position
             navMeshAgent.SetDestination(player.position);
-
+            isRunning = true;
             // Look at the player
             Vector3 directionToPlayer = (player.position - transform.position).normalized;
             Quaternion lookRotation = Quaternion.LookRotation(new Vector3(directionToPlayer.x, 0, directionToPlayer.z));
@@ -160,6 +175,15 @@ public class ZombieAI : MonoBehaviour
         ZombieAudioController zn = gameObject.GetComponent<ZombieAudioController>();
         if (!isDead && Time.time - lastHurtTime > hurtCooldown)
         {
+
+             navMeshAgent.SetDestination(player.position);
+            isRunning = true;
+            // Look at the player
+            Vector3 directionToPlayer = (player.position - transform.position).normalized;
+            Quaternion lookRotation = Quaternion.LookRotation(new Vector3(directionToPlayer.x, 0, directionToPlayer.z));
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+
+            
             isHurt = true;
             animator.SetTrigger("Hurt");
             zn.PlayHurtSoundEffect();
