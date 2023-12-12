@@ -11,7 +11,8 @@ using AuroraFPSRuntime.SystemModules.ControllerSystems;
 using AuroraFPSRuntime;
 public class ZombieAI : MonoBehaviour
 {
-    public bool isRunning;
+    public float runningSpeed;
+    private bool isRunning;
 
     public DamageInfo dmgInfo;
     public int AttackDamage;
@@ -26,6 +27,8 @@ public class ZombieAI : MonoBehaviour
     public Transform player;
     private NavMeshAgent navMeshAgent;
     private Animator animator;
+
+    public bool masterAlert;
     public bool isAlerted = false;
     private bool isHurt = false;
     private bool isDead = false;
@@ -53,13 +56,13 @@ public class ZombieAI : MonoBehaviour
                     if (isRunning == false)
                     {
                         animator.SetBool("IsWalking", true);
-                       
+
                     }
                     else
                     {
-                          animator.SetBool("IsWalking", false);
+                        animator.SetBool("IsWalking", false);
                         animator.SetBool("Running", true);
-                         navMeshAgent.speed = 3f;
+                        navMeshAgent.speed = runningSpeed;
                     }
 
                 }
@@ -79,10 +82,19 @@ public class ZombieAI : MonoBehaviour
                 }
                 if (!isAlerted)
                 {
-                    Patrol();
-                    CheckForPlayer();
+                    if (masterAlert != true)
+                    {
+                        Patrol();
+                        CheckForPlayer();
+                    }
                 }
                 else
+                {
+                    FollowPlayer();
+                    AttackPlayer();
+                }
+
+                if (masterAlert == true)
                 {
                     FollowPlayer();
                     AttackPlayer();
@@ -176,14 +188,14 @@ public class ZombieAI : MonoBehaviour
         if (!isDead && Time.time - lastHurtTime > hurtCooldown)
         {
 
-             navMeshAgent.SetDestination(player.position);
+            navMeshAgent.SetDestination(player.position);
             isRunning = true;
             // Look at the player
             Vector3 directionToPlayer = (player.position - transform.position).normalized;
             Quaternion lookRotation = Quaternion.LookRotation(new Vector3(directionToPlayer.x, 0, directionToPlayer.z));
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
 
-            
+
             isHurt = true;
             animator.SetTrigger("Hurt");
             zn.PlayHurtSoundEffect();
