@@ -13,6 +13,7 @@ using UnityEngine.SceneManagement;
 
 public class Level_Manager : MonoBehaviour
 {
+    public GameObject wave2Zombie;
     public GameObject player;
     public GameObject deathPanel;
     public string NextLevelName;
@@ -42,7 +43,21 @@ public class Level_Manager : MonoBehaviour
 
         if (kills >= TargetKills)
         {
+            if (scene_name == "Level 2")
+            {
+                wave2Zombie.SetActive(true);
+                TargetKills = 22;
+            }
+
+              if (scene_name == "Level 3")
+            {
+                wave2Zombie.SetActive(true);
+                TargetKills = 22;
+            }
+            if (kills >= TargetKills)
+        {
             CompleteLevel();
+        }
         }
     }
 
@@ -58,6 +73,16 @@ public class Level_Manager : MonoBehaviour
         {
 
             if (scene_name == "Level 2")
+            {
+                if (HostageManager.instance.isRescueCompleted)
+                {
+                    CompletePanel.SetActive(true);
+                    controlPanel.SetActive(false);
+                    PlayerCanvas.SetActive(false);
+                }
+            }
+
+            if (scene_name == "Level 3")
             {
                 if (HostageManager.instance.isRescueCompleted)
                 {

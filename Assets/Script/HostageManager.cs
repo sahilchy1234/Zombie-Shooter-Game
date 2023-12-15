@@ -47,5 +47,26 @@ public class HostageManager : MonoBehaviour
 
             }
         }
+
+
+        
+        if (sceneName == "Level 3")
+        {
+
+
+            /// All function for the hostages for level 2
+
+            if (explodedObject == 3 && k == false)
+            {
+                k = true;
+                for (int i = 0; i < rb_bodies.Length; i++)
+                {
+                    rb_bodies[i].isKinematic = false;
+                }
+
+                isRescueCompleted = true;
+
+            }
+        }
     }
 }
