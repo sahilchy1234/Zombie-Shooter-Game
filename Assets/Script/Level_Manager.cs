@@ -9,7 +9,7 @@ using AuroraFPSRuntime.SystemModules.ControllerSystems;
 using AuroraFPSRuntime.Attributes;
 using UnityEngine;
 using AuroraFPSRuntime;
-
+using UnityEngine.SceneManagement;
 
 public class Level_Manager : MonoBehaviour
 {
@@ -23,10 +23,13 @@ public class Level_Manager : MonoBehaviour
     public TMP_Text[] killText;
     public int kills;
     public static Level_Manager instance;
+    private string scene_name;
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
+        Scene scene = SceneManager.GetActiveScene();
+        scene_name = scene.name;
     }
 
     // Update is called once per frame
@@ -34,8 +37,7 @@ public class Level_Manager : MonoBehaviour
     {
         for (int i = 0; i < killText.Length; i++)
         {
-            killText[i].text = kills.ToString
-            ();
+            killText[i].text = kills.ToString();
         }
 
         if (kills >= TargetKills)
@@ -46,16 +48,33 @@ public class Level_Manager : MonoBehaviour
 
     void CompleteLevel()
     {
-        CompletePanel.SetActive(true);
-        controlPanel.SetActive(false);
-        PlayerCanvas.SetActive(false);
+        if (scene_name == "Level 1")
+        {
+            CompletePanel.SetActive(true);
+            controlPanel.SetActive(false);
+            PlayerCanvas.SetActive(false);
+        }
+        else
+        {
+
+            if (scene_name == "Level 2")
+            {
+                if (HostageManager.instance.isRescueCompleted)
+                {
+                    CompletePanel.SetActive(true);
+                    controlPanel.SetActive(false);
+                    PlayerCanvas.SetActive(false);
+                }
+            }
+        }
     }
 
-    public void nextLevel () {
+    public void nextLevel()
+    {
         Application.LoadLevel(NextLevelName);
     }
 
-     public void RestartLevel()
+    public void RestartLevel()
     {
         // Get the current active scene
         Scene currentScene = SceneManager.GetActiveScene();
@@ -63,18 +82,21 @@ public class Level_Manager : MonoBehaviour
         // Reload the current scene
         SceneManager.LoadScene(currentScene.name);
     }
-    public void MainMenu(){
-       SceneManager.LoadScene("Main_Menu");
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main_Menu");
     }
 
-    public void StartDeathFunctions () {
-      Invoke("MainDeath",2f);  
+    public void StartDeathFunctions()
+    {
+        Invoke("MainDeath", 2f);
     }
 
-    void MainDeath(){
-     player.GetComponent<FPHealth>().enabled = false;
-     player.GetComponent<PlayerRigidbodyController>().enabled = false;
-   
-     deathPanel.SetActive(true);
+    void MainDeath()
+    {
+        player.GetComponent<FPHealth>().enabled = false;
+        player.GetComponent<PlayerRigidbodyController>().enabled = false;
+
+        deathPanel.SetActive(true);
     }
 }

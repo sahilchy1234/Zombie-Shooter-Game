@@ -50,6 +50,11 @@ public class ZombieAI : MonoBehaviour
             if (!isHurt)
             {
 
+                if(  navMeshAgent.isStopped == true){
+                      animator.SetBool("IsWalking", false);
+                    animator.SetBool("Running", false);
+                }
+
                 float velocity = navMeshAgent.velocity.magnitude;
                 if (velocity > 0.2)
                 {
@@ -170,15 +175,21 @@ public class ZombieAI : MonoBehaviour
 
                 // Set isAlerted to true after attacking
                 isAlerted = true;
-            }
-            // Keep isWalking true during attack animation
-            // animator.SetBool("IsWalking", true);
+            isRunning = false;
+            animator.SetBool("Running", false);
+
+            // Stop the navigation agent during attack animation
+            navMeshAgent.isStopped = true;
         }
-        else
-        {
-            // Player is out of attack range, set isWalking to false
-            // animator.SetBool("IsWalking", false);
-        }
+    }
+    else
+    {
+        // Player is out of attack range, set isWalking to false
+        // animator.SetBool("IsWalking", false);
+
+        // Resume navigation when the player is out of attack range
+        navMeshAgent.isStopped = false;
+    }
     }
 
 
