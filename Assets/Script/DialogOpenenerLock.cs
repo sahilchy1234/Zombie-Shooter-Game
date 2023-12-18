@@ -5,27 +5,62 @@ using UnityEngine.SceneManagement;
 
 public class DialogOpenenerLock : MonoBehaviour
 {
-    public GameObject dialogObject;
-    private string scene_name;
-    
+  public GameObject keyLock_Object;
+  public GameObject dialogObject;
+  private string scene_name;
 
-  
-     void Start()
+
+
+  void Start()
+  {
+    Scene scene = SceneManager.GetActiveScene();
+    scene_name = scene.name;
+  }
+
+
+  void OnTriggerEnter(Collider other)
+  {
+    if (other.gameObject.tag == "Player")
     {
-          Scene scene = SceneManager.GetActiveScene();
-          scene_name = scene.name;
-    }
-
-
-    void OnTriggerEnter(Collider other) {
-    if(other.gameObject.tag == "Player"){
       dialogObject.SetActive(true);
-      
-      if(scene_name == "Level 3"){
-        if(keyManager.instance.keyPicked){
-           HostageManager.instance.Exploded();
+
+      if (scene_name == "Level 3")
+      {
+        if (keyManager.instance.keyPicked)
+        {
+          HostageManager.instance.Exploded();
+          keyLock_Object.SetActive(true);
+        }
+      }
+
+      if (scene_name == "Level 4")
+      {
+        if (keyManager.instance.keyPicked)
+        {
+          HostageManager.instance.Exploded();
+          keyLock_Object.SetActive(true);
+
+        }
+      }
+
+      if (scene_name == "Level 5")
+      {
+        if (keyManager.instance.keyPicked)
+        {
+          HostageManager.instance.Exploded();
+          keyLock_Object.SetActive(true);
+
+        }
+      }
+
+      if (scene_name == "Level 6")
+      {
+        if (keyManager.instance.keyPicked)
+        {
+          HostageManager.instance.Exploded();
+          keyLock_Object.SetActive(true);
         }
       }
     }
-   }
+  }
 }

@@ -11,6 +11,9 @@ using AuroraFPSRuntime.SystemModules.ControllerSystems;
 using AuroraFPSRuntime;
 public class ZombieAI : MonoBehaviour
 {
+
+    [Foldout("Not Necessary Except Level 5 and 6", Style = "Header")]
+    public ObjectHealth _objectHealth;
     public float runningSpeed;
     private bool isRunning;
 
@@ -35,6 +38,8 @@ public class ZombieAI : MonoBehaviour
     private float lastAttackTime;
     private float lastHurtTime;
 
+
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -50,8 +55,9 @@ public class ZombieAI : MonoBehaviour
             if (!isHurt)
             {
 
-                if(  navMeshAgent.isStopped == true){
-                      animator.SetBool("IsWalking", false);
+                if (navMeshAgent.isStopped == true)
+                {
+                    animator.SetBool("IsWalking", false);
                     animator.SetBool("Running", false);
                 }
 
@@ -106,6 +112,16 @@ public class ZombieAI : MonoBehaviour
                 }
             }
         }
+
+
+
+        float desiredSpeed = navMeshAgent.desiredVelocity.magnitude;
+
+        // Normalize and scale to animation parameter range (adjust range if needed)
+        float normalizedSpeed = Mathf.Clamp01(desiredSpeed / runningSpeed);
+
+        // Set animation speed parameter
+        animator.SetFloat("MovementSpeed", normalizedSpeed);
     }
 
     void Patrol()
@@ -155,11 +171,25 @@ public class ZombieAI : MonoBehaviour
             Quaternion lookRotation = Quaternion.LookRotation(new Vector3(directionToPlayer.x, 0, directionToPlayer.z));
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
 
-            // Set walking animation to true
-            // animator.SetBool("IsWalking", true);
+
+        }
+
+        if (Vector3.Distance(transform.position, player.position) < 2f)
+        {
+            if (!PlayerPrefs.HasKey("tutorial 2nd Part"))
+            {
+                DialongM.instance.tutorialHeadshot();
+                Invoke("NormalizeTime",4f);
+                PlayerPrefs.SetInt("tutorial 2nd Part", 1);
+            }
         }
     }
 
+
+    void NormalizeTime()
+    {
+        Time.timeScale = 1f;
+    }
     void AttackPlayer()
     {
         if (Vector3.Distance(transform.position, player.position) < attackRange)
@@ -167,6 +197,12 @@ public class ZombieAI : MonoBehaviour
             if (Time.time - lastAttackTime > attackCooldown)
             {
                 fpHealth.TakeDamage(AttackDamage, dmgInfo);
+
+                if (_objectHealth != null)
+                {
+                    _objectHealth.TakeDamage(AttackDamage, dmgInfo);
+                }
+
                 // Perform attack logic here
                 Debug.Log("Zombie attacks!");
                 animator.SetTrigger("Attack");
@@ -175,21 +211,21 @@ public class ZombieAI : MonoBehaviour
 
                 // Set isAlerted to true after attacking
                 isAlerted = true;
-            isRunning = false;
-            animator.SetBool("Running", false);
+                isRunning = false;
+                animator.SetBool("Running", false);
 
-            // Stop the navigation agent during attack animation
-            navMeshAgent.isStopped = true;
+                // Stop the navigation agent during attack animation
+                navMeshAgent.isStopped = true;
+            }
         }
-    }
-    else
-    {
-        // Player is out of attack range, set isWalking to false
-        // animator.SetBool("IsWalking", false);
+        else
+        {
+            // Player is out of attack range, set isWalking to false
+            // animator.SetBool("IsWalking", false);
 
-        // Resume navigation when the player is out of attack range
-        navMeshAgent.isStopped = false;
-    }
+            // Resume navigation when the player is out of attack range
+            navMeshAgent.isStopped = false;
+        }
     }
 
 
@@ -220,6 +256,7 @@ public class ZombieAI : MonoBehaviour
         if (!isDead)
         {
             Level_Manager.instance.kills++;
+            Popup_Manager.instance.ShowPopupMessage("Killed !");
             isDead = true;
             animator.SetBool("Die", true);
             navMeshAgent.isStopped = true;

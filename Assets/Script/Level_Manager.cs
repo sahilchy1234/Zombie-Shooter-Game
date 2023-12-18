@@ -5,108 +5,111 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using AuroraFPSRuntime.SystemModules.ControllerSystems;
-
 using AuroraFPSRuntime.Attributes;
 using UnityEngine;
 using AuroraFPSRuntime;
 using UnityEngine.SceneManagement;
-
 public class Level_Manager : MonoBehaviour
 {
+    [Header("Not Necessary Except Level 5 and 6")]
+    public GameObject finalCutScene;
+    public GameObject wave3Zombie;
+
+    [Header("Need Assigned for all Levels some Excluded for level 1")]
     public GameObject wave2Zombie;
     public GameObject player;
     public GameObject deathPanel;
-    public string NextLevelName;
+    public string nextLevelName;
     public GameObject controlPanel;
-    public GameObject PlayerCanvas;
-    public GameObject CompletePanel;
-    public int TargetKills;
+    public GameObject playerCanvas;
+    public GameObject completePanel;
+    public int targetKills;
     public TMP_Text[] killText;
     public int kills;
     public static Level_Manager instance;
-    private string scene_name;
-    // Start is called before the first frame update
+    private string sceneName;
+
     void Start()
     {
         instance = this;
         Scene scene = SceneManager.GetActiveScene();
-        scene_name = scene.name;
+        sceneName = scene.name;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        for (int i = 0; i < killText.Length; i++)
+        UpdateKillText();
+
+        if (kills >= targetKills)
         {
-            killText[i].text = kills.ToString();
+            UpdateTargetKillsAndActivateZombies();
+
+            if (kills >= targetKills)
+            {
+                CompleteLevel();
+            }
+        }
+    }
+
+    void UpdateKillText()
+    {
+        foreach (var text in killText)
+        {
+            text.text = kills.ToString();
+        }
+    }
+
+    void UpdateTargetKillsAndActivateZombies()
+    {
+        if (sceneName == "Level 2" || sceneName == "Level 3" || sceneName == "Level 4")
+        {
+            wave2Zombie.SetActive(true);
+            targetKills = 22;
         }
 
-        if (kills >= TargetKills)
+        if ((sceneName == "Level 5" || sceneName == "Level 6") && kills >= targetKills)
         {
-            if (scene_name == "Level 2")
-            {
-                wave2Zombie.SetActive(true);
-                TargetKills = 22;
-            }
+            targetKills = 34;
+            wave3Zombie.SetActive(true);
 
-              if (scene_name == "Level 3")
+            if (!ik)
             {
+                targetKills = 22;
                 wave2Zombie.SetActive(true);
-                TargetKills = 22;
+                ik = true;
             }
-            if (kills >= TargetKills)
-        {
-            CompleteLevel();
-        }
         }
     }
 
     void CompleteLevel()
     {
-        if (scene_name == "Level 1")
+        if (sceneName == "Level 1" || (sceneName == "Level 2" && HostageManager.instance.isRescueCompleted) ||
+            (sceneName == "Level 3" && HostageManager.instance.isRescueCompleted) ||
+            (sceneName == "Level 4" && HostageManager.instance.isRescueCompleted) ||
+            (sceneName == "Level 5" && HostageManager.instance.isRescueCompleted))
         {
-            CompletePanel.SetActive(true);
+            completePanel.SetActive(true);
             controlPanel.SetActive(false);
-            PlayerCanvas.SetActive(false);
+            playerCanvas.SetActive(false);
         }
-        else
+
+        if (sceneName == "Level 6" && HostageManager.instance.isRescueCompleted)
         {
-
-            if (scene_name == "Level 2")
-            {
-                if (HostageManager.instance.isRescueCompleted)
-                {
-                    CompletePanel.SetActive(true);
-                    controlPanel.SetActive(false);
-                    PlayerCanvas.SetActive(false);
-                }
-            }
-
-            if (scene_name == "Level 3")
-            {
-                if (HostageManager.instance.isRescueCompleted)
-                {
-                    CompletePanel.SetActive(true);
-                    controlPanel.SetActive(false);
-                    PlayerCanvas.SetActive(false);
-                }
-            }
+            finalCutScene.SetActive(true);
+            Invoke("MainFun", 4f);
         }
     }
 
-    public void nextLevel()
+    public void NextLevel()
     {
-        Application.LoadLevel(NextLevelName);
+        SceneManager.LoadScene(nextLevelName);
     }
 
     public void RestartLevel()
     {
-        // Get the current active scene
-        Scene currentScene = SceneManager.GetActiveScene();
-
-        // Reload the current scene
-        SceneManager.LoadScene(currentScene.name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
     public void MainMenu()
     {
         SceneManager.LoadScene("Main_Menu");
@@ -124,4 +127,13 @@ public class Level_Manager : MonoBehaviour
 
         deathPanel.SetActive(true);
     }
+
+    void MainFun()
+    {
+        completePanel.SetActive(true);
+        controlPanel.SetActive(false);
+        playerCanvas.SetActive(false);
+    }
+
+    private bool ik;
 }

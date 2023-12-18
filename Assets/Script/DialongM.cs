@@ -3,56 +3,66 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
 public class DialongM : MonoBehaviour
 {
-
     public TMP_Text[] text;
-    int i;
+    private int currentIndex;
 
-    public GameObject Controls;
+    public GameObject controlsPanel;
+    public Animator dialogPanelAnimator;
+    public GameObject secondPanel;
+    public GameObject headshotPanel;
 
-    public Animator dialogPanelAnim;
+    private bool gunPickedUp;
 
-    public GameObject SecondPanel;
+    public static DialongM instance;
 
-   public void NextFunction()
+   
+     void Awake()
     {
-
-
-     
-            if (i == 1)
-            {
-                dialogPanelAnim.Play("Hide");
-                  dialogPanelAnim.gameObject.SetActive(false);
-                Controls.SetActive(true);
-            }
-            if (i == 3)
-            {
-                dialogPanelAnim.Play("Hide");
-                dialogPanelAnim.gameObject.SetActive(false);
-                Controls.SetActive(true);
-            }
-            if(SecondPanel.activeSelf){
-                SecondPanel.SetActive(false);
-            }
-            if (i <= 1)
-            {
-                text[i].gameObject.SetActive(false);
-                i++;
-                text[i].gameObject.SetActive(true);
-            }
-
+        instance = this;
     }
-    bool k;
-    public void afterGunPickUp()
+
+    public void NextFunction()
     {
-
-
-        if (!k)
+        if (currentIndex == 1 || currentIndex == 3)
         {
+            HideDialogPanel();
+            controlsPanel.SetActive(true);
+        }
 
-            k = true;
-          SecondPanel.SetActive(true);
+        if (secondPanel.activeSelf)
+        {
+            secondPanel.SetActive(false);
+        }
+
+        if (currentIndex <= 1)
+        {
+            text[currentIndex].gameObject.SetActive(false);
+            currentIndex++;
+            text[currentIndex].gameObject.SetActive(true);
         }
     }
+
+    public void afterGunPickUp()
+    {
+        if (!gunPickedUp)
+        {
+            gunPickedUp = true;
+            secondPanel.SetActive(true);
+        }
+    }
+
+    private void HideDialogPanel()
+    {
+        dialogPanelAnimator.Play("Hide");
+        dialogPanelAnimator.gameObject.SetActive(false);
+    }
+
+
+   public void tutorialHeadshot(){
+      Time.timeScale = 0.1f;
+      headshotPanel.SetActive(true);
+    } 
 }

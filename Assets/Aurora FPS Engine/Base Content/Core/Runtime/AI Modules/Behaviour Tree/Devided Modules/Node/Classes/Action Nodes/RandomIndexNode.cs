@@ -27,25 +27,21 @@ namespace AuroraFPSRuntime.AIModules.BehaviourTree.Nodes
         [SerializeField]
         [TreeVariable(Variable = "listVariable")]
         private string elementVariable;
+protected override State OnUpdate()
+{
+    object element = null;
 
-        protected override State OnUpdate()
+    if (tree.TryGetVariable(listVariable, out TreeVariable variable1))
+    {
+        object valueObject = variable1.GetValueObject();
+        IList list = valueObject as IList;
+
+        if (list != null && list.Count > 0)
         {
-            object element = null;
-
-            if (tree.TryGetVariable(listVariable, out TreeVariable variable1))
-            {
-                object valueObject = variable1.GetValueObject();
-                IList list = valueObject as IList;
-                if (list != null)
-                {
-                    ICollection collection = valueObject as ICollection;
-                    if (collection != null)
-                    {
-                        int randomInt = Random.Range(0, collection.Count);
-                        element = list[randomInt];
-                    }
-                }
-            }
+            int randomInt = Random.Range(0, list.Count);
+            element = list[randomInt];
+        }
+    }
 
             if (element != null)
             {

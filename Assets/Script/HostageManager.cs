@@ -54,9 +54,61 @@ public class HostageManager : MonoBehaviour
         {
 
 
-            /// All function for the hostages for level 2
+            /// All function for the hostages for level 3
 
             if (explodedObject == 3 && k == false)
+            {
+                k = true;
+                for (int i = 0; i < rb_bodies.Length; i++)
+                {
+                    rb_bodies[i].isKinematic = false;
+                }
+
+                isRescueCompleted = true;
+
+            }
+        }
+
+        
+        if (sceneName == "Level 4")
+        {
+            /// All function for the hostages for level 4
+
+            if (explodedObject == 6 && k == false)
+            {
+                k = true;
+                for (int i = 0; i < rb_bodies.Length; i++)
+                {
+                    rb_bodies[i].isKinematic = false;
+                }
+
+                isRescueCompleted = true;
+
+            }
+        }
+
+            if (sceneName == "Level 5")
+        {
+            /// All function for the hostages for level 4
+
+            if (explodedObject == 9 && k == false)
+            {
+                k = true;
+                for (int i = 0; i < rb_bodies.Length; i++)
+                {
+                    rb_bodies[i].isKinematic = false;
+                }
+
+                isRescueCompleted = true;
+
+            }
+        }
+
+              if (sceneName == "Level 6")
+        {
+            /// All function for the hostages for level 4
+
+            if (explodedObject == 10 && k == false)
             {
                 k = true;
                 for (int i = 0; i < rb_bodies.Length; i++)
