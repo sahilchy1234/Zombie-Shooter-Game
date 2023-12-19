@@ -1,4 +1,4 @@
-﻿/* ================================================================
+/* ================================================================
    ----------------------------------------------------------------
    Project   :   Aurora FPS Engine
    Publisher :   Infinite Dawn
@@ -19,6 +19,7 @@ namespace AuroraFPSRuntime.SystemModules.CameraSystems
     [DisallowMultipleComponent]
     public class FirstPersonCamera : PlayerCamera
     {
+        public float sensitivity_m;
         [SerializeField]
         [Foldout("Control Settings", Style = "Header")]
         [Order(-899)]
@@ -60,6 +61,14 @@ namespace AuroraFPSRuntime.SystemModules.CameraSystems
         /// </summary>
         private void Start()
         {
+
+            if(!PlayerPrefs.HasKey("SensitivityDarkSliderValue")){
+              sensitivity_m = 0.6f;
+            }else{
+                sensitivity_m = PlayerPrefs.GetFloat("SensitivityDarkSliderValue");
+            }
+
+
             PlayerController playerController = GetPlayerController();
             Debug.Assert(playerController != null, $"<b><color=#FF0000>Attach reference of the player controller to {gameObject.name}<i>(gameobject)</i> -> {GetType().Name}<i>(component)</i> -> Controller<i>(field)</i>.</color></b>");
 
@@ -76,28 +85,79 @@ namespace AuroraFPSRuntime.SystemModules.CameraSystems
         /// <summary>
         /// Called after all Update functions have been called.
         /// </summary>
-        protected override void ApplyCameraRotation(Transform camera)
-        {
-            desiredVector.y += GetControlInput().y * Time.deltaTime;
 
-            if (clampVerticalRotation)
-                desiredVector.y = Math.Clamp(desiredVector.y, verticalRotationLimits);
+        float x_value;
+        float y_value;
+        Transform camera_m;
+        Transform target_m;
 
-            yDesiredRotation = Quaternion.AngleAxis(desiredVector.y, -Vector3.right);
-            ySmoothRotation = Quaternion.Slerp(ySmoothRotation, yDesiredRotation, rotationSmooth.y * Time.deltaTime);
-            GetHinge().localRotation = ySmoothRotation;
+        public void TouchControlInputM (float horizontal,float vertical) {
+            x_value = horizontal;
+            y_value = vertical;
+
+            Debug.Log(horizontal+"afsdjfnas"+vertical);
+
+           
+           
         }
+    protected override void ApplyCameraRotation(Transform camera)
+{
+    camera_m = camera;
+
+    // Get the input from the touchpad
+    float verticalInput = ETCInput.GetAxis("Vertical");
+    desiredVector.y += verticalInput * sensitivity_m;
+
+    // Log the touchpad input
+    // Debug.Log("Touchpad Input: " + verticalInput * sensitivity_m);
+
+    // Get the input from the "Vertical1" axis
+    float vertical1Input = ETCInput.GetAxis("Vertical1");
+
+    // Incorporate the input from "Vertical1" into the desiredVector or do whatever you need
+    // You can adjust the sensitivity for "Vertical1" separately if needed
+    desiredVector.y += vertical1Input * sensitivity_m;
+
+    // Log the "Vertical1" input
+    // Debug.Log("Vertical1 Input: " + vertical1Input);
+
+    if (clampVerticalRotation)
+        desiredVector.y = Mathf.Clamp(desiredVector.y, verticalRotationLimits.x, verticalRotationLimits.y);
+
+    yDesiredRotation = Quaternion.AngleAxis(desiredVector.y, -Vector3.right);
+    ySmoothRotation = Quaternion.Slerp(ySmoothRotation, yDesiredRotation, rotationSmooth.y * Time.deltaTime);
+    GetHinge().localRotation = ySmoothRotation;
+}
+
 
         /// <summary>
         /// The camera target is rotated.
         /// </summary>
-        protected override void ApplyTargetRotation(Transform target)
-        {
-            desiredVector.x = GetControlInput().x * Time.deltaTime;
-            xSmoothAngle = Mathf.Lerp(xSmoothAngle, desiredVector.x, rotationSmooth.x * Time.deltaTime);
-            target.Rotate(Vector3.up, xSmoothAngle, Space.Self);
-            GetHinge().localRotation = ySmoothRotation;
-        }
+   protected override void ApplyTargetRotation(Transform target)
+{
+    target_m = target;
+
+    // Get the input from the "Horizontal" axis
+    float horizontalInput = ETCInput.GetAxis("Horizontal");
+    desiredVector.x = horizontalInput * sensitivity_m;
+
+    // Log the "Horizontal" input
+    // Debug.Log("Horizontal Input: " + horizontalInput * sensitivity_m);
+
+    // Get the input from the "Horizontal1" axis
+    float horizontal1Input = ETCInput.GetAxis("Horizontal1");
+
+    // Incorporate the input from "Horizontal1" into the desiredVector or do whatever you need
+    // You can adjust the sensitivity for "Horizontal1" separately if needed
+    desiredVector.x += horizontal1Input * sensitivity_m;
+
+    // Log the "Horizontal1" input
+    // Debug.Log("Horizontal1 Input: " + horizontal1Input);
+
+    xSmoothAngle = Mathf.Lerp(xSmoothAngle, desiredVector.x, rotationSmooth.x * Time.deltaTime);
+    target_m.Rotate(Vector3.up, xSmoothAngle, Space.Self);
+    GetHinge().localRotation = ySmoothRotation;
+}
 
         /// <summary>
         /// Restore camera to default.

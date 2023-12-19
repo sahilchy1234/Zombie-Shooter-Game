@@ -22,14 +22,14 @@ public class DialogOpenenerLock : MonoBehaviour
   {
     if (other.gameObject.tag == "Player")
     {
-      dialogObject.SetActive(true);
+      dialogObject.SetActive(false);
 
       if (scene_name == "Level 3")
       {
         if (keyManager.instance.keyPicked)
         {
           HostageManager.instance.Exploded();
-          keyLock_Object.SetActive(true);
+          keyLock_Object.SetActive(false);
         }
       }
 
@@ -38,7 +38,7 @@ public class DialogOpenenerLock : MonoBehaviour
         if (keyManager.instance.keyPicked)
         {
           HostageManager.instance.Exploded();
-          keyLock_Object.SetActive(true);
+          keyLock_Object.SetActive(false);
 
         }
       }
@@ -48,7 +48,7 @@ public class DialogOpenenerLock : MonoBehaviour
         if (keyManager.instance.keyPicked)
         {
           HostageManager.instance.Exploded();
-          keyLock_Object.SetActive(true);
+          keyLock_Object.SetActive(false);
 
         }
       }
@@ -58,7 +58,7 @@ public class DialogOpenenerLock : MonoBehaviour
         if (keyManager.instance.keyPicked)
         {
           HostageManager.instance.Exploded();
-          keyLock_Object.SetActive(true);
+          keyLock_Object.SetActive(false);
         }
       }
     }

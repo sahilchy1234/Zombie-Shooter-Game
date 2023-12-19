@@ -65,6 +65,12 @@ namespace AuroraFPSRuntime
                 }
             }
         }
+        private DamageInfo damageInfos;
+        public void DeadThePlayer()
+        {
+
+            TakeDamage(1000, damageInfos);
+        }
 
         #region [Velocity Damage Implementation]
         /// <summary>

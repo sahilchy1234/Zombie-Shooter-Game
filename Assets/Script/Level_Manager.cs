@@ -14,6 +14,7 @@ public class Level_Manager : MonoBehaviour
     [Header("Not Necessary Except Level 5 and 6")]
     public GameObject finalCutScene;
     public GameObject wave3Zombie;
+    public GameObject detonatorShowingCanvas;
 
     [Header("Need Assigned for all Levels some Excluded for level 1")]
     public GameObject wave2Zombie;
@@ -36,6 +37,7 @@ public class Level_Manager : MonoBehaviour
         sceneName = scene.name;
     }
 
+    bool ss;
     void Update()
     {
         UpdateKillText();
@@ -43,11 +45,13 @@ public class Level_Manager : MonoBehaviour
         if (kills >= targetKills)
         {
             UpdateTargetKillsAndActivateZombies();
+        }
 
-            if (kills >= targetKills)
-            {
-                CompleteLevel();
-            }
+        if (kills >= 34 && ss == false)
+        {
+
+            detonatorShowingCanvas.SetActive(true);
+            ss = true;
         }
     }
 
@@ -59,30 +63,45 @@ public class Level_Manager : MonoBehaviour
         }
     }
 
+    private bool ik = false;
+
+
     void UpdateTargetKillsAndActivateZombies()
     {
-        if (sceneName == "Level 2" || sceneName == "Level 3" || sceneName == "Level 4")
-        {
-            wave2Zombie.SetActive(true);
-            targetKills = 22;
-        }
 
-        if ((sceneName == "Level 5" || sceneName == "Level 6") && kills >= targetKills)
+        if (kills >= targetKills)
         {
-            targetKills = 34;
-            wave3Zombie.SetActive(true);
 
-            if (!ik)
+            if (sceneName == "Level 2" || sceneName == "Level 3" || sceneName == "Level 4")
             {
-                targetKills = 22;
                 wave2Zombie.SetActive(true);
-                ik = true;
+                targetKills = 22;
             }
+
+            if ((sceneName == "Level 5" || sceneName == "Level 6") && kills >= targetKills)
+            {
+                if (ik)
+                {
+                    targetKills = 34;
+                    wave3Zombie.SetActive(true);
+                }
+
+                if (!ik)
+                {
+                    targetKills = 22;
+                    wave2Zombie.SetActive(true);
+                    ik = true;
+                }
+            }
+
+            CompleteLevel();
         }
     }
 
     void CompleteLevel()
     {
+        PlayerPrefs.SetInt(nextLevelName, 1);
+       
         if (sceneName == "Level 1" || (sceneName == "Level 2" && HostageManager.instance.isRescueCompleted) ||
             (sceneName == "Level 3" && HostageManager.instance.isRescueCompleted) ||
             (sceneName == "Level 4" && HostageManager.instance.isRescueCompleted) ||
@@ -112,7 +131,7 @@ public class Level_Manager : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("Main_Menu");
+        SceneManager.LoadScene("Main Menu");
     }
 
     public void StartDeathFunctions()
@@ -135,5 +154,5 @@ public class Level_Manager : MonoBehaviour
         playerCanvas.SetActive(false);
     }
 
-    private bool ik;
+
 }

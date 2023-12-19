@@ -62,7 +62,7 @@ public class DialongM : MonoBehaviour
 
 
    public void tutorialHeadshot(){
-      Time.timeScale = 0.1f;
+//  Time.timeScale = 0.1f;
       headshotPanel.SetActive(true);
     } 
 }

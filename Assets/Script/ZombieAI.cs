@@ -196,7 +196,9 @@ public class ZombieAI : MonoBehaviour
         {
             if (Time.time - lastAttackTime > attackCooldown)
             {
+                if(fpHealth != null){
                 fpHealth.TakeDamage(AttackDamage, dmgInfo);
+                }
 
                 if (_objectHealth != null)
                 {
@@ -255,6 +257,9 @@ public class ZombieAI : MonoBehaviour
     {
         if (!isDead)
         {
+             
+             Time.timeScale = 1f;
+
             Level_Manager.instance.kills++;
             Popup_Manager.instance.ShowPopupMessage("Killed !");
             isDead = true;

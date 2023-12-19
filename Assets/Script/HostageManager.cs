@@ -49,7 +49,7 @@ public class HostageManager : MonoBehaviour
         }
 
 
-        
+
         if (sceneName == "Level 3")
         {
 
@@ -69,7 +69,7 @@ public class HostageManager : MonoBehaviour
             }
         }
 
-        
+
         if (sceneName == "Level 4")
         {
             /// All function for the hostages for level 4
@@ -87,13 +87,25 @@ public class HostageManager : MonoBehaviour
             }
         }
 
-            if (sceneName == "Level 5")
+        if (sceneName == "Level 5")
         {
             /// All function for the hostages for level 4
 
-            if (explodedObject == 9 && k == false)
+            if (explodedObject == 4 && k == false)
             {
                 k = true;
+                for (int i = 0; i < rb_bodies.Length; i++)
+                {
+                    rb_bodies[i].isKinematic = false;
+                }
+
+                // isRescueCompleted = true;
+
+            }
+
+            if (explodedObject == 9 && k == false)
+            {
+                // k = true;
                 for (int i = 0; i < rb_bodies.Length; i++)
                 {
                     rb_bodies[i].isKinematic = false;
@@ -104,9 +116,20 @@ public class HostageManager : MonoBehaviour
             }
         }
 
-              if (sceneName == "Level 6")
+        if (sceneName == "Level 6")
         {
-            /// All function for the hostages for level 4
+         
+            if (explodedObject == 4 && k == false)
+            {
+                // k = true;
+                for (int i = 0; i < rb_bodies.Length; i++)
+                {
+                    rb_bodies[i].isKinematic = false;
+                }
+
+                // isRescueCompleted = true;
+
+            }
 
             if (explodedObject == 10 && k == false)
             {
