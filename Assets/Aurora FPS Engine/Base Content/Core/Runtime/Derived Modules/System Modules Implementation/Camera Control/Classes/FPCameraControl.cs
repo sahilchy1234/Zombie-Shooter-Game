@@ -109,6 +109,8 @@ namespace AuroraFPSRuntime
         /// </summary>
         protected override void Update()
         {
+                        Debug.Log("seflhjgkefkbgnmlfdm fetrthmghklemfg");
+
             ReadInput();
             CalculateRotation();
             ClampRotation();

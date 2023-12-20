@@ -37,7 +37,7 @@ namespace AuroraFPSRuntime.SystemModules.Settings
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Initialize()
         {
-            Config = Resources.LoadAll<SettingsConfig>(string.Empty).FirstOrDefault();
+            // Config = Resources.LoadAll<SettingsConfig>(string.Empty).FirstOrDefault();
             if (Config == null)
             {
                 Config = ScriptableObject.CreateInstance<JSONSettingsConfig>();

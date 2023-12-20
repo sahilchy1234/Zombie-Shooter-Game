@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class LevelClicker : MonoBehaviour
 {
     private Button _btn;
@@ -28,7 +29,8 @@ public class LevelClicker : MonoBehaviour
     }
 
     public void LoadLevel (string sceneName) {
-        Application.LoadLevel(sceneName);
+      SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+      
     }
 
 }

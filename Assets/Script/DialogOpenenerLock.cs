@@ -22,7 +22,7 @@ public class DialogOpenenerLock : MonoBehaviour
   {
     if (other.gameObject.tag == "Player")
     {
-      dialogObject.SetActive(false);
+      dialogObject.SetActive(true);
 
       if (scene_name == "Level 3")
       {

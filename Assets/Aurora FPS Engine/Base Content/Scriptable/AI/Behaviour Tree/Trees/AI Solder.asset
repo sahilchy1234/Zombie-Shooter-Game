@@ -353,10 +353,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   callType: 3
   name: AI Solder
-  singleCall: 1
-  description: 'Hello
-
-'
+  singleCall: 0
+  description: 
   rootNode: {fileID: -7086971707783951166}
   variables:
     keys:
@@ -367,12 +365,12 @@ MonoBehaviour:
     - player last position
     - health
     values:
-    - rid: 0
-    - rid: 1
-    - rid: 2
-    - rid: 3
-    - rid: 4
-    - rid: 5
+    - id: 0
+    - id: 1
+    - id: 2
+    - id: 3
+    - id: 4
+    - id: 5
   nodes:
   - {fileID: -7086971707783951166}
   - {fileID: 7688031774209509075}
@@ -412,34 +410,33 @@ MonoBehaviour:
   - {fileID: -4107973568013096322}
   groups: []
   references:
-    version: 2
-    RefIds:
-    - rid: 0
+    version: 1
+    00000000:
       type: {class: TransformVariable, ns: AuroraFPSRuntime.AIModules.BehaviourTree.Variables,
         asm: Assembly-CSharp}
       data:
         value: {fileID: 0}
-    - rid: 1
+    00000001:
       type: {class: BoolVariable, ns: AuroraFPSRuntime.AIModules.BehaviourTree.Variables,
         asm: Assembly-CSharp}
       data:
         value: 0
-    - rid: 2
+    00000002:
       type: {class: Vector3Variable, ns: AuroraFPSRuntime.AIModules.BehaviourTree.Variables,
         asm: Assembly-CSharp}
       data:
         value: {x: 0, y: 0, z: 0}
-    - rid: 3
+    00000003:
       type: {class: BoolVariable, ns: AuroraFPSRuntime.AIModules.BehaviourTree.Variables,
         asm: Assembly-CSharp}
       data:
         value: 0
-    - rid: 4
+    00000004:
       type: {class: Vector3Variable, ns: AuroraFPSRuntime.AIModules.BehaviourTree.Variables,
         asm: Assembly-CSharp}
       data:
         value: {x: 0, y: 0, z: 0}
-    - rid: 5
+    00000005:
       type: {class: FloatVariable, ns: AuroraFPSRuntime.AIModules.BehaviourTree.Variables,
         asm: Assembly-CSharp}
       data:

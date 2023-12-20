@@ -100,6 +100,14 @@ namespace AuroraFPSRuntime.SystemModules.CameraSystems
            
            
         }
+
+        public void mainZoomM(bool i){
+            if(i == true){
+             base.ZoomIn();
+            }else{
+               base.ZoomOut();
+            }
+        }
     protected override void ApplyCameraRotation(Transform camera)
 {
     camera_m = camera;

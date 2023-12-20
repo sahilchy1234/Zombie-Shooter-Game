@@ -64,3 +64,14 @@ The following packages were added:
   com.unity.editorcoroutines@1.0.0
   com.unity.inputsystem@1.6.3
   com.unity.postprocessing@3.2.2
+
+=== Tue Dec 19 22:31:03 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ide.visualstudio from version 2.0.14 to 2.0.18
+  com.unity.inputsystem from version 1.0.2 to 1.6.3
+  com.unity.postprocessing from version 3.1.1 to 3.2.2
+  com.unity.timeline from version 1.2.18 to 1.7.5

@@ -50,8 +50,11 @@ public class Level_Manager : MonoBehaviour
         if (kills >= 34 && ss == false)
         {
 
-            detonatorShowingCanvas.SetActive(true);
-            ss = true;
+            if (detonatorShowingCanvas != null)
+            {
+                detonatorShowingCanvas.SetActive(true);
+                ss = true;
+            }
         }
     }
 
@@ -100,13 +103,14 @@ public class Level_Manager : MonoBehaviour
 
     void CompleteLevel()
     {
-        PlayerPrefs.SetInt(nextLevelName, 1);
-       
+
+
         if (sceneName == "Level 1" || (sceneName == "Level 2" && HostageManager.instance.isRescueCompleted) ||
             (sceneName == "Level 3" && HostageManager.instance.isRescueCompleted) ||
             (sceneName == "Level 4" && HostageManager.instance.isRescueCompleted) ||
             (sceneName == "Level 5" && HostageManager.instance.isRescueCompleted))
         {
+            PlayerPrefs.SetInt(nextLevelName, 1);
             completePanel.SetActive(true);
             controlPanel.SetActive(false);
             playerCanvas.SetActive(false);
@@ -114,6 +118,7 @@ public class Level_Manager : MonoBehaviour
 
         if (sceneName == "Level 6" && HostageManager.instance.isRescueCompleted)
         {
+            PlayerPrefs.SetInt(nextLevelName, 1);
             finalCutScene.SetActive(true);
             Invoke("MainFun", 4f);
         }

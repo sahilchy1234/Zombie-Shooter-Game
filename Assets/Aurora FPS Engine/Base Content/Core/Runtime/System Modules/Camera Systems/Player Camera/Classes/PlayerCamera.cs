@@ -232,14 +232,14 @@ namespace AuroraFPSRuntime.SystemModules.CameraSystems
 
         protected virtual void RegisterInputActions()
         {
-            InputReceiver.ZoomAction.performed += ZoomAction;
-            InputReceiver.ZoomAction.canceled += ZoomAction;
+            // InputReceiver.ZoomAction.performed += ZoomAction;
+            // InputReceiver.ZoomAction.canceled += ZoomAction;
         }
 
         protected virtual void RemoveInputActions()
         {
-            InputReceiver.ZoomAction.performed -= ZoomAction;
-            InputReceiver.ZoomAction.canceled -= ZoomAction;
+            // InputReceiver.ZoomAction.performed -= ZoomAction;
+            // InputReceiver.ZoomAction.canceled -= ZoomAction;
         }
 
         #region [Input Action Wrapper]

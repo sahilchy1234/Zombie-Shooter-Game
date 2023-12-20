@@ -54,7 +54,7 @@ namespace TouchControlsKit.Utils
             m_Camera.farClipPlane = .25f;
             m_Camera.depth = 1f;
             m_Camera.useOcclusionCulling = false;
-            m_Camera.hdr = false;
+            m_Camera.allowHDR = false;
         }
 #endif
     }

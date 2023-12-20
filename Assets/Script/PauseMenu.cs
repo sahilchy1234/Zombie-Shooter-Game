@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class Objective
@@ -13,7 +14,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject objectivesPanel;
-    public Text objectivesText;
+    public Text objectivesText,objectivesText1;
 
     public List<Objective> objectivesList;
 
@@ -22,6 +23,8 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         ResumeGame();
+                UpdateObjectivesText();
+
     }
 
    
@@ -59,6 +62,7 @@ public class PauseMenu : MonoBehaviour
                 objectivesString += "\n";
             }
             objectivesText.text = objectivesString;
+            objectivesText1.text = objectivesString;
         }
         else
         {
@@ -86,6 +90,6 @@ public class PauseMenu : MonoBehaviour
     public void MainMenu()
     {
         // Add code to save progress or handle any other necessary tasks
-        Application.LoadLevel("Main Menu");
+       SceneManager.LoadScene("Main Menu", LoadSceneMode.Single);
     }
 }

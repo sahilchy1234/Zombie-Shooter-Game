@@ -6,6 +6,7 @@ using TMPro;
 
 public class DialongM : MonoBehaviour
 {
+    
     public TMP_Text[] text;
     private int currentIndex;
 

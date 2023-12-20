@@ -35,7 +35,7 @@ public class HostageManager : MonoBehaviour
 
             /// All function for the hostages for level 2
 
-            if (explodedObject == 3 && k == false)
+            if (explodedObject >= 3 && k == false)
             {
                 k = true;
                 for (int i = 0; i < rb_bodies.Length; i++)
@@ -56,9 +56,10 @@ public class HostageManager : MonoBehaviour
 
             /// All function for the hostages for level 3
 
-            if (explodedObject == 3 && k == false)
+            if (explodedObject  >= 3 && k == false)
             {
                 k = true;
+
                 for (int i = 0; i < rb_bodies.Length; i++)
                 {
                     rb_bodies[i].isKinematic = false;
@@ -74,7 +75,7 @@ public class HostageManager : MonoBehaviour
         {
             /// All function for the hostages for level 4
 
-            if (explodedObject == 6 && k == false)
+            if (explodedObject >=6 && k == false)
             {
                 k = true;
                 for (int i = 0; i < rb_bodies.Length; i++)
@@ -91,7 +92,7 @@ public class HostageManager : MonoBehaviour
         {
             /// All function for the hostages for level 4
 
-            if (explodedObject == 4 && k == false)
+            if (explodedObject  >= 4 && k == false)
             {
                 k = true;
                 for (int i = 0; i < rb_bodies.Length; i++)
@@ -103,7 +104,7 @@ public class HostageManager : MonoBehaviour
 
             }
 
-            if (explodedObject == 9 && k == false)
+            if (explodedObject >= 9 && k == false)
             {
                 // k = true;
                 for (int i = 0; i < rb_bodies.Length; i++)
@@ -119,7 +120,7 @@ public class HostageManager : MonoBehaviour
         if (sceneName == "Level 6")
         {
          
-            if (explodedObject == 4 && k == false)
+            if (explodedObject  >= 4 && k == false)
             {
                 // k = true;
                 for (int i = 0; i < rb_bodies.Length; i++)
@@ -131,7 +132,7 @@ public class HostageManager : MonoBehaviour
 
             }
 
-            if (explodedObject == 10 && k == false)
+            if (explodedObject >= 10 && k == false)
             {
                 k = true;
                 for (int i = 0; i < rb_bodies.Length; i++)
